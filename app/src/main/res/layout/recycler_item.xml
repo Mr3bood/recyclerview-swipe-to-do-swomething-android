@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+
+
+    <!-- <RelativeLayout
+         android:background="@color/description"
+         android:id="@+id/foreground2"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <ImageView
+             android:background="@drawable/edit_icon_when_swiped_show"
+             android:layout_width="40dp"
+             android:layout_height="40dp"
+             android:layout_marginTop="10dp"
+             android:layout_marginLeft="5dp"
+             android:id="@+id/editIconWhenSwipedShow"/>
+
+         <TextView
+             android:layout_toRightOf="@+id/editIconWhenSwipedShow"
+             android:layout_width="200dp"
+             android:layout_height="50dp"
+             android:textColor="#FFFFFF"
+             android:id="@+id/editTextWhenSwipedShow"
+             android:layout_marginBottom="5dp"
+             android:layout_marginTop="5dp"
+             android:text="edit"
+             android:textSize="20sp"
+             android:paddingTop="11dp"
+             android:textAlignment="viewStart"/>
+     </RelativeLayout-->
+    <RelativeLayout
+        android:id="@+id/foreground1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:visibility="invisible"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/deleteIconWhenSwipedShow"
+            android:background="@drawable/delete_icon_when_swiped_show"/>
+        <TextView
+            android:visibility="invisible"
+            android:text="delete"
+            android:textColor="#FFFFFF"
+            android:id="@+id/deleteTextWhenSwipedShow"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/deleteIconWhenSwipedShow"
+            android:textSize="20sp"
+            android:paddingTop="11dp"
+            android:textAlignment="viewEnd"/>
+
+        <ImageView
+            android:visibility="invisible"
+            android:background="@drawable/edit_icon_when_swiped_show"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/editIconWhenSwipedShow"/>
+
+        <TextView
+            android:visibility="invisible"
+            android:layout_toRightOf="@+id/editIconWhenSwipedShow"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/editTextWhenSwipedShow"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:text="edit"
+            android:textSize="20sp"
+            android:paddingTop="11dp"
+            android:textAlignment="viewStart"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="#FFFFFF"
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/nameToShow"/>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/nameToShow"
+            android:layout_alignStart="@+id/nameToShow"
+            android:id="@+id/numberToShow"/>
+
+    </RelativeLayout>
+</FrameLayout>
